@@ -1,227 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-  <url>
-    <loc>https://realestateaitools.shop/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://realestateaitools.shop/privacy-policy/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://realestateaitools.shop/terms/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- Article 1 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/best-ai-tools-real-estate-agents-2026/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <!-- Article 2 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/chatgpt-prompts-real-estate-agents/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <!-- Article 3 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/free-ai-tools-realtors/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <!-- Article 4 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-lead-generation-real-estate/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <!-- Article 5 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/claude-real-estate-agents/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 6 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-tools-real-estate-cold-calling/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 7 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-email-templates-real-estate-agents/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 8 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/automate-real-estate-follow-ups/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 9 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/best-ai-crm-real-estate-agents/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 10 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-video-tools-real-estate/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 11 (AI Social Media) -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-social-media-marketing-real-estate/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 12 (AI Transformation — was missing from sitemap) -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-real-estate-transformation-2026/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 13 (ChatGPT Beginners — was missing from sitemap) -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/chatgpt-real-estate-beginners/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 14 (AI Email Marketing — was missing from sitemap) -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/best-ai-tools-real-estate-email-marketing/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 15 (AI Appointment Setting) -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-appointment-setting-realtors/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 16 (AI Real Estate Prospecting) -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-real-estate-prospecting/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 16b (AI Real Estate Automation) -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/real-estate-ai-automation/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 17a (AI Virtual Staging) — ADDED Session 3 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-virtual-staging-real-estate/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 17b (Best AI Tools for Real Estate Investors) — ADDED Session 3 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/best-ai-tools-real-estate-investors/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 18 (AI Real Estate Copywriting) — ADDED Session 3 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-real-estate-copywriting/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 19 (Midjourney for Real Estate Marketing) — ADDED Session 3 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/midjourney-real-estate-marketing/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 20 (AI Transaction Management) — ADDED Session 4 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-real-estate-transaction-management/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- FUTURE ARTICLES (add as published):
-  - /blog/ai-real-estate-transaction-management/   (Article 20)
-  - /blog/ai-writing-tools-real-estate/            (Article 21)
-  - /blog/ai-real-estate-objection-handling/       (Article 22)
-  - /blog/chatgpt-listing-descriptions/             (Article 23)
-  - /blog/ai-tools-fsbo/                            (Article 24)
-  - /blog/ai-tools-real-estate-team-management/    (Article 25)
-  - /blog/ai-real-estate-competitive-analysis/      (Article 26)
-  - /blog/ai-tools-real-estate-referrals/           (Article 27)
-  - /blog/ai-real-estate-time-management/          (Article 28)
-  - /blog/chatgpt-real-estate-negotiation/         (Article 29)
-  - /blog/future-ai-real-estate-2026-2030/         (Article 30)
-  -->
-
-  <url>
-    <loc>https://realestateaitools.shop/blog/chatgpt-real-estate-listing-descriptions/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 21 (AI Writing Tools) — ADDED Session 8 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/best-ai-writing-tools-real-estate-agents/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 22 (AI Objection Handling) — ADDED Session 8 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-real-estate-objection-handling/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 24 (AI Tools for FSBO) — ADDED Session 8 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/ai-tools-for-real-estate-fsbo/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Article 25 (Best AI Tools for Real Estate Team Management) — ADDED Session 12 -->
-  <url>
-    <loc>https://realestateaitools.shop/blog/best-ai-tools-real-estate-team-management/</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://realestateaitools.shop/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://realestateaitools.shop/blog/best-ai-tools-real-estate-agents-2025/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/chatgpt-prompts-for-real-estate-agents/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/free-ai-tools-real-estate-agents/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-lead-generation-real-estate/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/claude-ai-real-estate-lead-nurturing/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/top-10-ai-tools-real-estate-cold-calling/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-email-templates-real-estate-agents/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/automate-real-estate-follow-ups/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/best-ai-crm-real-estate-agents/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-video-tools-real-estate-listings/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-social-media-marketing-real-estate/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/how-ai-is-transforming-real-estate-2025/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/chatgpt-for-real-estate-beginners/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/how-to-use-ai-for-real-estate-market-analysis/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/best-ai-tools-real-estate-email-marketing/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-appointment-setting-realtors/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-real-estate-prospecting/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/real-estate-ai-automation/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-virtual-staging-real-estate/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/best-ai-tools-real-estate-investors/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-real-estate-copywriting/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/how-to-use-midjourney-real-estate-marketing/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-tools-real-estate-transaction-management/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/best-ai-writing-tools-real-estate-agents/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-real-estate-objection-handling/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/chatgpt-real-estate-listing-descriptions/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-tools-for-real-estate-fsbo/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/best-ai-tools-real-estate-team-management/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-real-estate-competitive-analysis/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/ai-tools-real-estate-referral-marketing/</loc><priority>0.8</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/privacy-policy/</loc><priority>0.3</priority></url>
+  <url><loc>https://realestateaitools.shop/blog/terms/</loc><priority>0.3</priority></url>
 </urlset>
