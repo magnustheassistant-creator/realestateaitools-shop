@@ -1,0 +1,20 @@
+# robots.txt — AI Tools for Real Estate
+User-agent: *
+Allow: /
+
+# Block common non-content paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/admin/
+Disallow: /cgi-bin/
+
+# Block search result / filter pages (prevent duplicate content)
+Disallow: /search?
+Disallow: /tag/
+Disallow: /author/
+
+# Sitemaps
+Sitemap: https://ai-tools-real-estate.com/sitemap.xml
+
+# Crawl delay (optional — use if server is slow)
+# Crawl-delay: 1
