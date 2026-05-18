@@ -14,7 +14,7 @@ Disallow: /tag/
 Disallow: /author/
 
 # Sitemaps
-Sitemap: https://ai-tools-real-estate.com/sitemap.xml
+Sitemap: https://realestateaitools.shop/sitemap.xml
 
 # Crawl delay (optional — use if server is slow)
 # Crawl-delay: 1
