@@ -515,7 +515,20 @@ function handleSubmit(e) {
                 <li id="cite-4">G2 Crowd. <em>"Best Conversational Marketing Platforms 2026."</em> Chatbot ROI and conversion rate data. <a href="https://www.g2.com/categories/conversational-marketing" target="_blank" rel="noopener noreferrer">g2.com</a></li>
             </ol>
         </article>
+    <div class="cta" style="margin-top:40px;">
+            <h3 style="color:#667eea;font-size:1.4em;margin-bottom:10px;">📬 Get AI Tools Updates Weekly</h3>
+            <p style="color:#888;margin-bottom:20px;">Join 2,000+ real estate agents getting our weekly AI tool picks. No spam, unsubscribe anytime.</p>
+            <form id="newsletter-form" onsubmit="handleSubscribe(event)" style="display:flex;gap:10px;max-width:400px;margin:0 auto;flex-wrap:wrap;justify-content:center;">
+                <input type="email" id="newsletter-email" placeholder="your@email.com" required style="flex:1;min-width:200px;padding:12px 18px;border:1px solid #667eea;border-radius:30px;background:#1a1a2e;color:#fff;font-size:1em;">
+                <button type="submit" style="padding:12px 24px;background:#667eea;color:#fff;border:none;border-radius:30px;font-weight:700;cursor:pointer;">Subscribe</button>
+            </form>
+            <p id="newsletter-success" style="display:none;color:#27ae60;margin-top:15px;">✅ You're in! Check your inbox for the weekly picks.</p>
+        </div>
     </main>
+    
+    <script>
+    function handleSubscribe(e){e.preventDefault();var email=document.getElementById('newsletter-email').value;var btn=document.querySelector('#newsletter-form button');btn.textContent='Subscribing...';btn.disabled=true;fetch('https://api.brevo.com/v3/contacts',{method:'POST',headers:{'api-key':'YOUR_BREVO_API_KEY','Content-Type':'application/json'},body:JSON.stringify({email:email,listIds:[YOUR_BREVO_LIST_ID],updateEnabled:true})}).then(function(r){if(r.ok){document.getElementById('newsletter-success').style.display='block';document.getElementById('newsletter-form').style.display='none';}else{alert('Subscription failed. Please try again.');btn.textContent='Subscribe';btn.disabled=false;}}).catch(function(){alert('Error. Please try again.');btn.textContent='Subscribe';btn.disabled=false;});}
+    </script>
 
     <footer>
         <div class="container">
