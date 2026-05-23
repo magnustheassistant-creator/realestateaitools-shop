@@ -3,44 +3,655 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate AI Tools Blog | realestateaitools.shop</title>
-    <meta name="description" content="In-depth articles on the best AI tools for real estate agents. Tutorials, comparisons, prompts, and strategies.">
+    <title>Blog | AI Tools for Real Estate</title>
+    <meta name="description" content="In-depth articles on the best AI tools for real estate agents. Tutorials, comparisons, ChatGPT prompts, and strategies.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://realestateaitools.shop/blog/">
     <link rel="stylesheet" href="../styles.css">
-    <style>
-        body { background: #0a0a0a; color: #f1f5f9; font-family: -apple-system, sans-serif; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
-        .header { text-align: center; margin-bottom: 50px; }
-        .header h1 { font-size: 2.5em; color: #fff; margin-bottom: 10px; }
-        .header p { color: #888; }
-        .back-link { color: #00d4ff; text-decoration: none; margin-bottom: 20px; display: inline-block; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
-        .post-card { background: #111; border: 1px solid #222; border-radius: 16px; padding: 28px; transition: all 0.3s; }
-        .post-card:hover { border-color: #00d4ff; transform: translateY(-3px); }
-        .post-card h2 { font-size: 1.2em; color: #fff; margin-bottom: 10px; line-height: 1.4; }
-        .post-card h2 a { color: inherit; text-decoration: none; }
-        .post-card h2 a:hover { color: #00d4ff; }
-        .post-card p { color: #888; font-size: 0.9em; margin-bottom: 16px; line-height: 1.6; }
-        .post-meta { font-size: 0.78em; color: #666; margin-bottom: 12px; }
-        .post-link { display: inline-block; padding: 8px 18px; background: #00d4ff; color: #000; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 0.85em; }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <a href="../" class="back-link">← Back to RealEstateAI.tools</a>
-        <div class="header">
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="nav-brand">RealEstate<span>AI</span>.tools</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="https://gumroad.com/l/ai-stack-guide" class="nav-cta">Get the Guide</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="blog-header">
             <h1>AI Tools for Real Estate — Blog</h1>
             <p>Tutorials, comparisons, ChatGPT prompts, and AI strategies for real estate professionals</p>
         </div>
-        <div class="grid">
-            <div class="post-card"><h2><a href="ai-appointment-setting-realtors/">AI Appointment Setting for Realtors</a></h2><p class="post-meta">May 2026 • AI Automation</p><p>How to use AI to automate your appointment setting workflow and never miss a lead follow-up again.</p><a href="ai-appointment-setting-realtors/" class="post-link">Read Article →</a></div>
-            <div class="post-card"><h2><a href="ai-email-templates-real-estate-agents/">AI Email Templates for Real Estate Agents</a></h2><p class="post-meta">May 2026 • Email Marketing</p><p>20+ AI-generated email templates for every stage of the real estate funnel, from lead to close.</p><a href="ai-email-templates-real-estate-agents/" class="post-link">Read Article →</a></div>
-            <div class="post-card"><h2><a href="ai-lead-generation-real-estate/">AI Lead Generation in Real Estate</a></h2><p class="post-meta">May 2026 • Lead Generation</p><p>The best AI tools for generating, qualifying, and nurturing real estate leads at scale.</p><a href="ai-lead-generation-real-estate/" class="post-link">Read Article →</a></div>
-            <div class="post-card"><h2><a href="best-ai-tools-for-real-estate-agents-2025/">Best AI Tools for Real Estate Agents 2025</a></h2><p class="post-meta">May 2026 • Tool Reviews</p><p>Comprehensive guide to the top AI tools every real estate agent should be using in 2025.</p><a href="best-ai-tools-for-real-estate-agents-2025/" class="post-link">Read Article →</a></div>
-            <div class="post-card"><h2><a href="chatgpt-for-real-estate-beginners/">ChatGPT for Real Estate Beginners</a></h2><p class="post-meta">May 2026 • ChatGPT Guide</p><p>Step-by-step guide for real estate agents just getting started with ChatGPT.</p><a href="chatgpt-for-real-estate-beginners/" class="post-link">Read Article →</a></div>
-            <div class="post-card"><h2><a href="ai-virtual-staging-real-estate/">AI Virtual Staging for Real Estate</a></h2><p class="post-meta">May 2026 • Property Marketing</p><p>Use AI to virtually stage empty properties and help buyers visualize their future home.</p><a href="ai-virtual-staging-real-estate/" class="post-link">Read Article →</a></div>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search articles..." oninput="filterArticles()">
         </div>
-    </div>
+
+        <div class="filter-tags">
+            <button class="filter-tag active" data-filter="all">All</button><button class="filter-tag" data-filter="ai-assistants">AI Assistants</button><button class="filter-tag" data-filter="ai-automation">AI Automation</button><button class="filter-tag" data-filter="ai-email">AI Email</button><button class="filter-tag" data-filter="ai-lead-generation">AI Lead Generation</button><button class="filter-tag" data-filter="ai-tools">AI Tools</button><button class="filter-tag" data-filter="chatgpt">ChatGPT</button><button class="filter-tag" data-filter="lead-generation">Lead Generation</button>
+        </div>
+
+        <div class="grid" id="articles-grid">
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~12 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-tools-real-estate-agents-2025/">Best AI Tools for Real Estate Agents 2025: The Ultimate Guide</a></h3>
+                <p>Let's be honest — real estate is a time-devouring industry. Between showing properties, negotiating deals, nurturing leads, and keeping clients happy, the hours in the day never quite add up. That's e</p>
+                <a href="/blog/best-ai-tools-real-estate-agents-2025/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="chatgpt">
+                <div class="card-meta">
+                    <span class="card-category">ChatGPT</span>
+                    <span class="card-read-time">~~14 min</span>
+                </div>
+                <h3><a href="/blog/chatgpt-prompts-for-real-estate-agents/">ChatGPT Prompts for Real Estate Agents: 50+ Prompts to Close More Deals</a></h3>
+                <p>If you're a real estate agent not using ChatGPT yet, you're leaving hours on the table every single week. ChatGPT for real estate agents has evolved from a novelty into one of the most practical produ</p>
+                <a href="/blog/chatgpt-prompts-for-real-estate-agents/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~11 min</span>
+                </div>
+                <h3><a href="/blog/free-ai-tools-real-estate-agents/">Free AI Tools for Real Estate Agents: The Ultimate No-Cost Stack for 2025</a></h3>
+                <p>Not every real estate agent has $100/month to spend on AI tools — and you shouldn't have to. Some of the best AI tools for real estate agents are completely free, and when used strategically, they can</p>
+                <a href="/blog/free-ai-tools-real-estate-agents/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="lead-generation">
+                <div class="card-meta">
+                    <span class="card-category">Lead Generation</span>
+                    <span class="card-read-time">~~13 min</span>
+                </div>
+                <h3><a href="/blog/ai-lead-generation-real-estate/">AI Lead Generation for Real Estate: The Complete Guide for 2025</a></h3>
+                <p>Lead generation is the lifeblood of real estate. No leads, no deals. No deals, no commission. It's that simple. And in 2025, AI has fundamentally changed what's possible — agents who use AI for lead g</p>
+                <a href="/blog/ai-lead-generation-real-estate/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~10 min</span>
+                </div>
+                <h3><a href="/blog/claude-ai-real-estate-lead-nurturing/">How to Use Claude AI for Real Estate Lead Nurturing: A Practical Guide</a></h3>
+                <p>While most real estate agents have heard of ChatGPT, fewer have discovered Claude AI — and that's a missed opportunity, especially for lead nurturing. Claude excels at exactly the kind of nuanced, emo</p>
+                <a href="/blog/claude-ai-real-estate-lead-nurturing/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~11 min</span>
+                </div>
+                <h3><a href="/blog/top-10-ai-tools-real-estate-cold-calling/">Top 10 AI Tools for Real Estate Cold Calling: Close More Deals in Less Time</a></h3>
+                <p>Cold calling in real estate is a volume game — but it doesn't have to be a soul-crushing one. The average agent makes 50-100 calls a day and talks to maybe 3-5 real prospects. The rest? Wrong numbers,</p>
+                <a href="/blog/top-10-ai-tools-real-estate-cold-calling/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-email">
+                <div class="card-meta">
+                    <span class="card-category">AI Email</span>
+                    <span class="card-read-time">~~10 min</span>
+                </div>
+                <h3><a href="/blog/ai-email-templates-real-estate-agents/">AI Email Templates for Real Estate Agents: 15 Ready-to-Use Scripts for 2025</a></h3>
+                <p>Let's cut to it: if you're still writing every real estate email from scratch, you're leaving money on the table. Every hour you spend crafting a single follow-up email is an hour you're not showing p</p>
+                <a href="/blog/ai-email-templates-real-estate-agents/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-automation">
+                <div class="card-meta">
+                    <span class="card-category">AI Automation</span>
+                    <span class="card-read-time">~~10 min</span>
+                </div>
+                <h3><a href="/blog/automate-real-estate-follow-ups/">Automate Your Real Estate Follow-Ups with AI: The Complete 2025 Guide</a></h3>
+                <p>Let's cut to the truth most real estate trainers won't tell you: the #1 reason agents lose deals isn't price, competition, or market conditions. It's silence. A prospect reaches out on Tuesday. You me</p>
+                <a href="/blog/automate-real-estate-follow-ups/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~14 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-crm-real-estate-agents/">Best AI CRM for Real Estate Agents Compared: 2025 Guide</a></h3>
+                <p>If you're still managing your real estate leads in a spreadsheet or a generic CRM never built for agents, you're leaving deals — and commission — on the table every single day. The best AI CRM for rea</p>
+                <a href="/blog/best-ai-crm-real-estate-agents/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-video-tools-real-estate-listings/">Best AI Video Tools for Real Estate Listings in 2025: Create Stunning Property Videos in Minutes</a></h3>
+                <p>Real estate listings that include video generate **403% more inquiries** than those with photos alone, according to industry research. Yet most agents cite time constraints and production costs as bar</p>
+                <a href="/blog/ai-video-tools-real-estate-listings/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~10 min</span>
+                </div>
+                <h3><a href="/blog/ai-social-media-marketing-real-estate/">AI Social Media Tools for Real Estate Agents: Dominate Your Feed in 2025</a></h3>
+                <p>Social media is now mandatory for real estate agents who want to generate leads consistently. But between showing properties, negotiating deals, and managing closings, when are you supposed to create</p>
+                <a href="/blog/ai-social-media-marketing-real-estate/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/how-ai-is-transforming-real-estate-2025/">How AI is Transforming Real Estate in 2026: The Complete Industry Shift</a></h3>
+                <p>Every few decades, a technology comes along that doesn't just make an industry slightly more efficient — it fundamentally restructures who wins and who loses. AI in real estate is that kind of transfo</p>
+                <a href="/blog/how-ai-is-transforming-real-estate-2025/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="chatgpt">
+                <div class="card-meta">
+                    <span class="card-category">ChatGPT</span>
+                    <span class="card-read-time">~~12 min</span>
+                </div>
+                <h3><a href="/blog/chatgpt-for-real-estate-beginners/">ChatGPT for Real Estate: A Complete Beginner's Guide (2025)</a></h3>
+                <p>If you've been hearing about ChatGPT everywhere but haven't actually used it for your real estate business yet, you're in the right place. This guide walks you through everything a brand new real esta</p>
+                <a href="/blog/chatgpt-for-real-estate-beginners/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/how-to-use-ai-for-real-estate-market-analysis/">Best AI Tools for Real Estate Market Analysis in 2025: A Complete Guide</a></h3>
+                <p>Let's be honest: traditional market analysis is time-consuming. Pulling comparable sales, calculating price-per-square-foot trends, evaluating Days on Market (DOM) data, and factoring in neighborhood</p>
+                <a href="/blog/how-to-use-ai-for-real-estate-market-analysis/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-tools-real-estate-email-marketing/">Best AI Tools for Real Estate Email Marketing in 2026: Complete Guide</a></h3>
+                <p>Real estate email marketing remains one of the highest-ROI channels for agents and brokers — yet it is also one of the most time-consuming to execute well. Writing personalized follow-ups, nurturing l</p>
+                <a href="/blog/best-ai-tools-real-estate-email-marketing/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-appointment-setting-realtors/">AI Appointment Setting Tools for Realtors: The Complete 2026 Guide</a></h3>
+                <p>Scheduling showings, buyer consultations, and listing presentations is one of the most time-consuming tasks in real estate. Every phone tag, no-show, and double-booked slot costs you money and momentu</p>
+                <a href="/blog/ai-appointment-setting-realtors/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-prospecting/">AI for Real Estate Prospecting: The Complete Agent's Guide for 2025</a></h3>
+                <p>Traditional prospecting is manual, time-consuming, and often demoralizing. Dialing through leads, leaving voicemails, and sending generic mailers consumes 30–40% of an agent's week. The problem isn't</p>
+                <a href="/blog/ai-real-estate-prospecting/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/real-estate-ai-automation/">Real Estate AI Automation: Save 10+ Hours Every Week Without Hiring an Assistant</a></h3>
+                <p>Real estate AI automation uses artificial intelligence tools to handle tasks that would otherwise require manual effort — often around the clock. Unlike simple automation rules (like "send this email</p>
+                <a href="/blog/real-estate-ai-automation/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~10 min</span>
+                </div>
+                <h3><a href="/blog/ai-virtual-staging-real-estate/">AI Virtual Staging for Real Estate: Transform Empty Rooms into Dream Homes</a></h3>
+                <p>An empty room is a blank canvas — but to most buyers, it reads as "I can't visualize what this space could be." Traditional staging costs $2,000–$5,000 per listing and takes weeks to coordinate. AI vi</p>
+                <a href="/blog/ai-virtual-staging-real-estate/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-tools-real-estate-investors/">Best AI Tools for Real Estate Investors: Complete Guide for 2026</a></h3>
+                <p>The real estate investment landscape has shifted dramatically. Off-market deals move faster than ever, rental markets fluctuate with local economic conditions, and investors are competing not just loc</p>
+                <a href="/blog/best-ai-tools-real-estate-investors/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-email-coaching-lavender-review/">Lavender AI Review: The Best Email Coaching Tool for Real Estate Agents in 2025</a></h3>
+                <p>title: "Lavender AI Review: The Best Email Coaching Tool for Real Estate Agents in 2025"
+description: "Discover how Lavender AI helps real estate agents write better emails, get more responses, and cl</p>
+                <a href="/blog/ai-email-coaching-lavender-review/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~8 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-copywriting/">AI for Real Estate Copywriting: The Complete 2026 Guide to Writing Listings, Ads, and Scripts That Convert</a></h3>
+                <p>Every great real estate deal starts with words. The listing description that makes a buyer fall in love at first read. The email subject line that earns an open. The Facebook ad copy that stops the sc</p>
+                <a href="/blog/ai-real-estate-copywriting/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~9 min</span>
+                </div>
+                <h3><a href="/blog/ai-virtual-tour-software-real-estate/">Best AI Virtual Tour Software for Real Estate Agents 2025</a></h3>
+                <p>title: Best AI Virtual Tour Software for Real Estate Agents 2025
+description: Discover the top AI-powered virtual tour tools that help real estate agents showcase properties remotely, close deals fast</p>
+                <a href="/blog/ai-virtual-tour-software-real-estate/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/how-to-use-midjourney-real-estate-marketing/">How to Use Midjourney for Real Estate Marketing: The Complete Guide</a></h3>
+                <p>Midjourney is an AI image generation platform that runs through Discord. You enter a text description (called a "prompt"), and the AI generates images matching that description in various styles—photo</p>
+                <a href="/blog/how-to-use-midjourney-real-estate-marketing/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-tools-real-estate-transaction-management/">Best AI Tools for Real Estate Transaction Management in 2026</a></h3>
+                <p>Traditional transaction management means manually tracking every step of a deal—inspection deadlines, loan approvals, disclosure signatures, closing dates—in a combination of email threads, paper file</p>
+                <a href="/blog/ai-tools-real-estate-transaction-management/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~11 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-writing-tools-real-estate-agents/">Best AI Writing Tools for Real Estate Agents: Close More Deals with Less Typing</a></h3>
+                <p>Every real estate agent is a writer. You write listing descriptions, email follow-ups, social media posts, objection responses, and client newsletters — often under deadline pressure, often late at ni</p>
+                <a href="/blog/best-ai-writing-tools-real-estate-agents/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~9 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-objection-handling/">AI for Real Estate Objection Handling: The Complete Guide for Agents in 2025</a></h3>
+                <p>Every real estate agent hears the same objections dozens of times: *"It's too expensive." "I'll think about it." "The timing isn't right."* What separates top closers from those who struggle isn't luc</p>
+                <a href="/blog/ai-real-estate-objection-handling/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/chatgpt-real-estate-listing-descriptions/">ChatGPT for Real Estate Listing Descriptions: Complete Guide (50+ Prompts Included)</a></h3>
+                <p>When I first started in real estate, writing listing descriptions was the last task I wanted to tackle at the end of a long day. The same property would sit in my pipeline because crafting something t</p>
+                <a href="/blog/chatgpt-real-estate-listing-descriptions/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-tools-for-real-estate-fsbo/">Best AI Tools for FSBO Sellers in 2025: Close More Deals Without an Agent</a></h3>
+                <p>FSBO means "For Sale By Owner." Instead of listing your property with a real estate agent and paying a 5–6% commission (split between the buyer's and seller's agents), you handle the entire sale yours</p>
+                <a href="/blog/ai-tools-for-real-estate-fsbo/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-tools-real-estate-team-management/">Best AI Tools for Real Estate Team Management in 2026: Complete Guide</a></h3>
+                <p>Managing a real estate team means juggling leads, transactions, coaching, and commissions — all at the same time. Most team leaders I talk to spend 3-4 hours per day on admin work that AI could handle</p>
+                <a href="/blog/best-ai-tools-real-estate-team-management/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-competitive-analysis/">AI for Real Estate Competitive Analysis: Complete Guide for Agents</a></h3>
+                <p>title: "AI for Real Estate Competitive Analysis: Complete Guide for Agents"
+description: "Discover the best AI tools for real estate competitive analysis in 2025. Learn how top agents use AI to spy on</p>
+                <a href="/blog/ai-real-estate-competitive-analysis/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~9 min</span>
+                </div>
+                <h3><a href="/blog/ai-tools-real-estate-referral-marketing/">Best AI Tools for Real Estate Referral Marketing in 2026</a></h3>
+                <p>Referrals are the lifeblood of a successful real estate business. According to the National Association of Realtors, over 40% of real estate transactions come from referrals and repeat clients — and t</p>
+                <a href="/blog/ai-tools-real-estate-referral-marketing/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-time-management/">AI for Real Estate Time Management: Save 10+ Hours Every Week Without Losing a Single Client</a></h3>
+                <p>Real estate is a people business—but the paperwork says otherwise. Between showings, client calls, contract negotiations, and backend operations, agents report that **only 30% of their workday** goes</p>
+                <a href="/blog/ai-real-estate-time-management/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/chatgpt-real-estate-negotiation/">ChatGPT Prompts for Real Estate Negotiation: Close More Deals at the Table</a></h3>
+                <p>Most agents prepare for a negotiation by reviewing comps and the offer price. That's table stakes. The agents who consistently close are the ones who think three moves ahead—who have responses ready f</p>
+                <a href="/blog/chatgpt-real-estate-negotiation/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/future-ai-real-estate-2026-2030/">The Future of AI in Real Estate (2026–2030): What's Coming, What's Changing, and What Stays Human</a></h3>
+                <p>The current state of AI in real estate is characterized by **task automation**, not **transaction replacement**. Today's AI tools handle specific, well-defined jobs:</p>
+                <a href="/blog/future-ai-real-estate-2026-2030/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-assistants">
+                <div class="card-meta">
+                    <span class="card-category">AI Assistants</span>
+                    <span class="card-read-time">~~14 min</span>
+                </div>
+                <h3><a href="/blog/gemini-ai-real-estate-agents/">Gemini AI for Real Estate Agents: Complete Guide (2026)</a></h3>
+                <p>If you've been using ChatGPT or Claude for your real estate business, you might have noticed something: Google's Gemini AI is rapidly becoming a serious contender — and for real estate agents specific</p>
+                <a href="/blog/gemini-ai-real-estate-agents/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~13 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-tools-real-estate-new-agents-2026/">Best AI Tools for Real Estate New Agents 2026: Start Strong</a></h3>
+                <p>Starting your real estate career in 2026 is nothing like it was five years ago. Today's top-producing new agents aren't working harder — they're working smarter, and the difference is AI tools for rea</p>
+                <a href="/blog/best-ai-tools-real-estate-new-agents-2026/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~12 min</span>
+                </div>
+                <h3><a href="/blog/ai-tools-real-estate-isa/">AI Tools for Real Estate ISA (Inside Sales Agent): Complete Guide 2026</a></h3>
+                <p>Inside Sales Agents (ISAs) are the engine rooms of modern real estate teams. They source leads, qualify prospects, book appointments, and keep the pipeline flowing — all while the listing and buyer ag</p>
+                <a href="/blog/ai-tools-real-estate-isa/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-automation">
+                <div class="card-meta">
+                    <span class="card-category">AI Automation</span>
+                    <span class="card-read-time">~~11 min</span>
+                </div>
+                <h3><a href="/blog/automate-real-estate-showing-feedback/">Automate Real Estate Showing Feedback: Complete Guide 2026</a></h3>
+                <p>Every real estate agent knows this feeling: you spend an hour showing a home to a qualified buyer, answer all their questions, build rapport, and then... nothing. They drive away, you wait two days, s</p>
+                <a href="/blog/automate-real-estate-showing-feedback/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-lead-generation">
+                <div class="card-meta">
+                    <span class="card-category">AI Lead Generation</span>
+                    <span class="card-read-time">~~12 min</span>
+                </div>
+                <h3><a href="/blog/ai-tools-real-estate-farming/">AI Tools for Real Estate Farming: Complete Guide 2026</a></h3>
+                <p>Real estate farming is one of the highest-yielding long-term strategies an agent can deploy. Instead of chasing every lead that walks through the door, you pick a neighborhood — a "farm" — and systema</p>
+                <a href="/blog/ai-tools-real-estate-farming/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~14 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-transaction-management/">AI Transaction Management Tools for Real Estate Agents: Complete Guide 2026</a></h3>
+                <p>Every real estate deal is a complex dance of deadlines, documents, signatures, and coordination between dozens of parties. A single transaction can involve 14+ separate steps, multiple disclosure pack</p>
+                <a href="/blog/ai-real-estate-transaction-management/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-objection-handling-scripts/">AI Real Estate Objection Handling Scripts: Complete Guide for 2025</a></h3>
+                <p>When a buyer says "the price is too high" or a seller pushes back on your commission, every word you use matters. Objection handling is one of the highest-leverage skills in real estate sales — and it</p>
+                <a href="/blog/ai-real-estate-objection-handling-scripts/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~10 min</span>
+                </div>
+                <h3><a href="/blog/best-free-ai-crm-real-estate-agents-2026/">Best Free AI CRM for Real Estate Agents 2026: Top Picks That Won't Cost You Anything</a></h3>
+                <p>Let's be honest — as a real estate agent, you don't have time to manage a dozen spreadsheets, sticky notes, and inbox tabs just to keep track of your clients. You need a CRM that actually works for yo</p>
+                <a href="/blog/best-free-ai-crm-real-estate-agents-2026/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-team-management-software/">AI Real Estate Team Management Software: Complete Guide for 2025</a></h3>
+                <p>Real estate teams are only as effective as their coordination systems. A team of 10 agents with poor communication, fragmented lead tracking, and manual scheduling overhead will always underperform a</p>
+                <a href="/blog/ai-real-estate-team-management-software/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/perplexity-ai-real-estate-agents/">Perplexity AI for Real Estate Agents: Complete Guide 2025</a></h3>
+                <p>Every real estate agent needs a research assistant — someone who can pull up market data, summarize neighborhood trends, verify property history, and find the answer to a specific question in seconds</p>
+                <a href="/blog/perplexity-ai-real-estate-agents/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/chatgpt-real-estate-fsbo/">ChatGPT for Real Estate FSBO: Complete Guide to Selling "For Sale By Owner"</a></h3>
+                <p>For sale by owner (FSBO) properties represent one of the most underserved segments of the real estate market. Homeowners who attempt to sell without an agent face a steep learning curve — pricing corr</p>
+                <a href="/blog/chatgpt-real-estate-fsbo/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-chatbots-real-estate-websites/">AI Chatbots for Real Estate Websites: Best Tools & Setup Guide 2025</a></h3>
+                <p>A real estate website without a chatbot is like a storefront with no salesperson — visitors browse, have questions, and then leave without converting. AI chatbots for real estate websites have changed</p>
+                <a href="/blog/ai-chatbots-real-estate-websites/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/chatgpt-real-estate-investors/">ChatGPT for Real Estate Investors: Complete Guide 2025</a></h3>
+                <p>Real estate investing is a game of information — the investor who can analyze deals faster, model scenarios more thoroughly, and research markets more effectively wins more deals. ChatGPT has become o</p>
+                <a href="/blog/chatgpt-real-estate-investors/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-wholesaling-tools/">AI Real Estate Wholesaling Tools: Complete Guide 2025</a></h3>
+                <p>Real estate wholesaling has always been a game of speed and relationships — find a distressed seller, get the contract, find a buyer, close. But the wholesalers who are scaling in 2025 aren't just wor</p>
+                <a href="/blog/ai-real-estate-wholesaling-tools/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-wholesaling/">AI Real Estate Wholesaling: Complete Guide for 2025</a></h3>
+                <p>Real estate wholesaling has always been a high-speed, relationship-driven business — find a distressed seller, get the contract, find a cash buyer, close fast. What has changed in 2025 is the competit</p>
+                <a href="/blog/ai-real-estate-wholesaling/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/claude-ai-commercial-real-estate/">Claude AI for Commercial Real Estate: Complete Guide 2025</a></h3>
+                <p>Commercial real estate is a different beast from residential — longer deal cycles, complex financial models, specialized property types, and relationships that develop over months rather than days. Fo</p>
+                <a href="/blog/claude-ai-commercial-real-estate/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/what-tools-do-real-estate-agents-use-2026/">What Tools Do Real Estate Agents Use in 2025? A Complete Guide to Modern Real Estate Tech Stack</a></h3>
+                <p>Every successful real estate agent in 2025 relies on a specific toolkit — a combination of CRM software, AI-powered productivity tools, marketing platforms, and transaction management systems that wor</p>
+                <a href="/blog/what-tools-do-real-estate-agents-use-2026/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-real-estate-open-house-automation-tools/">AI Real Estate Open House Automation Tools: Complete Guide 2025</a></h3>
+                <p>An open house that isn't automated is leaving leads on the table. Every weekend, thousands of potential buyers walk through properties — and without a systematic follow-up process, most of those leads</p>
+                <a href="/blog/ai-real-estate-open-house-automation-tools/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-tools-real-estate-email-marketing-2026/">Best AI Tools for Real Estate Email Marketing in 2025</a></h3>
+                <p>Email marketing remains one of the highest-ROI activities in real estate — but it's also one of the most time-consuming to do well. Writing weekly newsletters, crafting property announcements, maintai</p>
+                <a href="/blog/best-ai-tools-real-estate-email-marketing-2026/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~14 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-tools-real-estate-photography-2026/">Best AI Tools for Real Estate Photography 2026: Close More Listings with Less Effort</a></h3>
+                <p>Real estate photography is no longer just about showing up with a camera. In 2026, the properties that sell fastest are the ones that look like they belong in a design magazine — and AI tools are how</p>
+                <a href="/blog/best-ai-tools-real-estate-photography-2026/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~~11 min</span>
+                </div>
+                <h3><a href="/blog/ai-virtual-assistant-real-estate-agents/">AI Virtual Assistants for Real Estate Agents: The Complete 2026 Guide</a></h3>
+                <p>Every successful real estate agent has one thing in common: they delegate ruthlessly. The moment you try to handle showing scheduling, lead follow-ups, contract drafts, and client communications all y</p>
+                <a href="/blog/ai-virtual-assistant-real-estate-agents/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-transaction-management-tools-real-estate/">52 Ai Transaction Management Tools Real Estate</a></h3>
+                <p>title: Best AI Transaction Management Tools for Real Estate Agents in 2025
+description: Discover the top AI-powered transaction management tools that streamline paperwork, deadlines, and client commun</p>
+                <a href="/blog/ai-transaction-management-tools-real-estate/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/ai-cma-software-real-estate-agents/">53 Ai Cma Software Real Estate Agents</a></h3>
+                <p>title: Best AI CMA Software for Real Estate Agents in 2025
+description: Discover the best AI-powered CMA (Comparative Market Analysis) software that helps real estate agents price properties accuratel</p>
+                <a href="/blog/ai-cma-software-real-estate-agents/" class="card-link">Read Article →</a>
+            </article>
+            <article class="card" data-category="ai-tools">
+                <div class="card-meta">
+                    <span class="card-category">AI Tools</span>
+                    <span class="card-read-time">~5 min</span>
+                </div>
+                <h3><a href="/blog/best-ai-tools-for-real-estate-agents-2025/">Best AI Tools for Real Estate Agents 2025: Complete Guide to Working Smarter</a></h3>
+                <p>Let's get this out of the way: AI isn't replacing you as an agent. It's replacing the parts of your job that were eating up your time without adding value — drafting follow-up emails, scheduling showi</p>
+                <a href="/blog/best-ai-tools-for-real-estate-agents-2025/" class="card-link">Read Article →</a>
+            </article>
+        </div>
+
+        <div class="no-results" id="no-results" style="display: none;">
+            <p>No articles found matching your search.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">RealEstate<span>AI</span>.tools</div>
+                    <p class="footer-desc">The most comprehensive resource for AI tools and strategies for real estate professionals.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Content</h4>
+                    <ul>
+                        <li><a href="/blog/">Blog Articles</a></li>
+                        <li><a href="/blog/">AI Tool Reviews</a></li>
+                        <li><a href="/blog/">ChatGPT Prompts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://gumroad.com/l/ai-stack-guide">Ultimate AI Stack</a></li>
+                        <li><a href="/blog/">Free Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="mailto:brainstormcorp@protonmail.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 RealEstateAI.tools. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function filterArticles() {
+        const searchInput = document.getElementById('search-input').value.toLowerCase();
+        const activeFilter = document.querySelector('.filter-tag.active').dataset.filter;
+        const cards = document.querySelectorAll('#articles-grid .card');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const desc = card.querySelector('p').textContent.toLowerCase();
+            const category = card.dataset.category;
+
+            const matchesSearch = title.includes(searchInput) || desc.includes(searchInput);
+            const matchesFilter = activeFilter === 'all' || category === activeFilter;
+
+            if (matchesSearch && matchesFilter) {
+                card.style.display = '';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        document.getElementById('no-results').style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    document.querySelectorAll('.filter-tag').forEach(tag => {
+        tag.addEventListener('click', () => {
+            document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+            tag.classList.add('active');
+            filterArticles();
+        });
+    });
+    </script>
 </body>
 </html>

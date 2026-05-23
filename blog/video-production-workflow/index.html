@@ -4,426 +4,446 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Complete guide about Video Production Workflow: AI Tools for Real Estate for real estate agents. Learn AI tools, strategies, and workflows.">
-    <meta name="keywords" content="video, production, workflow:, ai, tools, for, real, estate">
-    <title>Video Production Workflow: AI Tools for Real Estate</title>
+    <meta name="description" content="Video Production Workflow - Complete guide for real estate agents. Learn AI tools, strategies, and workflows to grow your business.">
+    <title>Video Production Workflow</title>
     <link rel="canonical" href="https://realestateaitools.shop/blog/video-production-workflow/">
-    <meta property="og:title" content="Video Production Workflow: AI Tools for Real Estate">
-    <meta property="og:description" content="Complete guide about Video Production Workflow: AI Tools for Real Estate for real estate agents. Learn AI tools, strategies, and workflows.">
+    <meta property="og:title" content="Video Production Workflow">
+    <meta property="og:description" content="Video Production Workflow - Complete guide for real estate agents.">
     <meta property="og:url" content="https://realestateaitools.shop/blog/video-production-workflow/">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="AI Tools for Real Estate">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Video Production Workflow: AI Tools for Real Estate">
-    <meta name="twitter:description" content="Complete guide about Video Production Workflow: AI Tools for Real Estate for real estate agents. Learn AI tools, strategies, and workflows.">
+    <meta name="twitter:title" content="Video Production Workflow">
+    <meta name="twitter:description" content="Video Production Workflow">
     <link rel="stylesheet" href="/styles.css">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-        .article-header { text-align: center; padding: 40px 0; border-bottom: 1px solid #eee; }
-        .article-header h1 { font-size: 2.2em; margin-bottom: 10px; color: #1a1a1a; }
-        .article-meta { color: #666; font-size: 0.9em; }
-        .article-content { padding: 30px 0; }
-        .article-content h2 { margin-top: 40px; color: #2c3e50; }
-        .article-content h3 { margin-top: 30px; color: #34495e; }
-        .article-content p { margin-bottom: 20px; color: #333; }
-        .article-content ul, .article-content ol { margin-bottom: 20px; padding-left: 25px; }
-        .article-content li { margin-bottom: 8px; }
-        .article-content code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
-        .article-content pre { background: #f4f4f4; padding: 20px; border-radius: 8px; overflow-x: auto; margin: 20px 0; }
-        .article-content blockquote { border-left: 4px solid #3498db; padding-left: 20px; margin: 20px 0; font-style: italic; color: #555; }
-        .article-footer { text-align: center; padding: 40px 0; margin-top: 40px; border-top: 1px solid #eee; }
-        .back-link { color: #3498db; text-decoration: none; }
+        .article-page { padding-bottom: 80px; }
+        
+        .article-header { padding: 60px 0 40px; text-align: center; }
+        .article-header .category { 
+            display: inline-block; 
+            background: rgba(99, 102, 241, 0.15); 
+            color: var(--primary); 
+            padding: 6px 16px; 
+            border-radius: 100px; 
+            font-size: 0.85rem; 
+            font-weight: 600;
+            margin-bottom: 20px;
+        }}
+        .article-header h1 { 
+            font-size: clamp(2rem, 5vw, 3rem); 
+            font-weight: 800; 
+            line-height: 1.2; 
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }}
+        .article-meta { color: var(--text-dim); font-size: 0.95rem; }
+        
+        .article-content { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        .article-content h2 { 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            margin: 48px 0 24px; 
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }}
+        .article-content h3 { 
+            font-size: 1.3rem; 
+            font-weight: 600; 
+            margin: 32px 0 16px; 
+        }}
+        .article-content p { 
+            color: var(--text-muted); 
+            margin-bottom: 20px; 
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }}
+        .article-content ul, .article-content ol { 
+            margin-bottom: 24px; 
+            padding-left: 24px;
+        }}
+        .article-content li { 
+            margin-bottom: 10px; 
+            color: var(--text-muted);
+            line-height: 1.7;
+        }}
+        .article-content strong { color: var(--text); }
+        .article-content code { 
+            background: var(--bg-card); 
+            padding: 2px 8px; 
+            border-radius: 4px; 
+            font-size: 0.9em;
+        }}
+        .article-content pre { 
+            background: var(--bg-card); 
+            padding: 20px; 
+            border-radius: 12px; 
+            overflow-x: auto; 
+            margin: 24px 0;
+            border: 1px solid var(--border);
+        }}
+        .article-content pre code { background: transparent; padding: 0; }
+        .article-content blockquote { 
+            border-left: 4px solid var(--primary); 
+            padding-left: 20px; 
+            margin: 24px 0; 
+            font-style: italic; 
+            color: var(--text-dim);
+        }}
+        .article-content hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+        .article-content a { color: var(--primary); }
+        .article-content a:hover { color: var(--secondary); }
+        
+        .toc { 
+            background: var(--bg-card); 
+            border: 1px solid var(--border); 
+            border-radius: 12px; 
+            padding: 24px; 
+            margin: 32px 0;
+        }}
+        .toc h3 { margin-bottom: 16px; font-size: 1.1rem; }
+        .toc ul { list-style: none; padding: 0; }
+        .toc li { margin-bottom: 8px; }
+        .toc a { color: var(--text-muted); font-size: 0.95rem; }
+        .toc a:hover { color: var(--primary); }
+        
+        .newsletter-section { 
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); 
+            border-radius: 20px; 
+            padding: 48px; 
+            text-align: center; 
+            margin: 60px 0;
+        }}
+        .newsletter-section h3 { font-size: 1.8rem; margin-bottom: 12px; }
+        .newsletter-section p { opacity: 0.9; margin-bottom: 24px; }
+        .newsletter-section form { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .newsletter-section input { 
+            padding: 14px 20px; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 1rem; 
+            min-width: 250px;
+        }}
+        .newsletter-section button { 
+            background: var(--bg-dark); 
+            color: white; 
+            border: none; 
+            padding: 14px 28px; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            cursor: pointer;
+        }}
+        
+        .related-articles { margin: 60px 0; }
+        .related-articles h3 { font-size: 1.5rem; margin-bottom: 24px; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .related-card { 
+            background: var(--bg-card); 
+            border: 1px solid var(--border); 
+            border-radius: 12px; 
+            padding: 20px;
+            transition: all 0.3s;
+        }}
+        .related-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+        .related-card a { color: var(--text); font-weight: 600; }
+        .related-card a:hover { color: var(--primary); }
+        .related-card p { color: var(--text-dim); font-size: 0.9rem; margin-top: 8px; }
+        
+        .affiliate-disclaimer { 
+            font-size: 0.8rem; 
+            color: var(--text-dim); 
+            text-align: center; 
+            margin-top: 60px; 
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }}
     </style>
 </head>
 <body>
-    <div class="article-header">
-        <h1>Video Production Workflow: AI Tools for Real Estate</h1>
-        <div class="article-meta">May 2026 | ~10 min read</div>
-    </div>
-    <article class="article-content">
-        <h1>Video Production Workflow: AI Tools for Real Estate</h1>
-<h2>Pre-Production Checklist</h2>
-<h3>Phase 1: Topic Selection &amp; Research (Day 1-2)</h3>
-<ul>
-<li>[ ] Select topic from content calendar</li>
-<li>[ ] Conduct keyword research</li>
-<li>[ ] Review competitor videos (watch 3-5 top performers)</li>
-<li>[ ] Identify unique angle/take on topic</li>
-<li>[ ] Create outline with main points</li>
-</ul>
-<h3>Phase 2: Script Writing (Day 2-4)</h3>
-<ul>
-<li>[ ] Write Hook (30 seconds, attention-grabbing)</li>
-<li>[ ] Write Introduction (1-2 minutes, what viewer learns)</li>
-<li>[ ] Write Main Content (8-10 minutes, core teaching)</li>
-<li>[ ] Write Closing + CTA (30-60 seconds)</li>
-<li>[ ] Write SEO title, description, tags</li>
-<li>[ ] Review and refine script flow</li>
-<li>[ ] Time script against target runtime</li>
-</ul>
-<h3>Phase 3: Visual Asset Preparation (Day 4-5)</h3>
-<ul>
-<li>[ ] Create thumbnail concept (Canva template)</li>
-<li>[ ] Prepare screen recordings needed</li>
-<li>[ ] Gather stock footage B-roll options</li>
-<li>[ ] Prepare any slides or graphics</li>
-<li>[ ] Create any diagrams or overlays</li>
-</ul>
-<hr />
-<h2>Production Process</h2>
-<h3>Equipment Needed</h3>
-<table>
-<thead>
-<tr>
-<th>Item</th>
-<th>Recommendation</th>
-<th>Budget</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Camera</td>
-<td>iPhone 12+ or mirrorless</td>
-<td>Already owned</td>
-</tr>
-<tr>
-<td>Microphone</td>
-<td>Lavalier clip-on (Boya or similar)</td>
-<td>$30-50</td>
-</tr>
-<tr>
-<td>Lighting</td>
-<td>Ring light 10-12"</td>
-<td>$40-80</td>
-</tr>
-<tr>
-<td>Tripod</td>
-<td>Basic phone tripod</td>
-<td>$25-40</td>
-</tr>
-<tr>
-<td>Background</td>
-<td>Clean wall or virtual backdrop</td>
-<td>$0-100</td>
-</tr>
-</tbody>
-</table>
-<h3>Recording Setup</h3>
-<pre class="codehilite"><code>1. Location: Home office or clean professional space
-2. Background: Blurred or branded backdrop
-3. Lighting: Natural from side + ring light front-facing
-4. Camera: Eye level, slightly above
-5. Audio: Lavalier mic on, test levels
-6. Props: Ready for screen recording reference
-</code></pre>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="nav-brand">RealEstate<span>AI</span>Tools</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/#tools">Tools</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#newsletter" class="nav-cta">Get Updates</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <main class="article-page">
+        <header class="article-header container">
+            <span class="category">AI Tools</span>
+            <h1>Video Production Workflow</h1>
+            <div class="article-meta">May 23, 2026 | ~8 min read</div>
+        </header>
+
+        <article class="article-content">
+            <nav class="toc"><h3>Quick Navigation</h3><ul><li><a href="#ai-tools-for-real-estate-magnus">AI Tools for Real Estate — Magnus</a></li><li><a href="#pre-production-1-2-days-before-filming-">Pre-Production (1-2 days before filming)</a></li><li><a href="#production-filming-day-">Production (Filming Day)</a></li><li><a href="#post-production">Post-Production</a></li><li><a href="#ai-voice-over-option-for-faceless-videos-">AI Voice-Over Option (For Faceless Videos)</a></li><li><a href="#tools-software-stack">Tools & Software Stack</a></li><li><a href="#quality-checklist-before-publishing-">Quality Checklist (Before Publishing)</a></li><li><a href="#upload-schedule-template">Upload Schedule Template</a></li><li><a href="#scalability-options">Scalability Options</a></li><li><a href="#content-calendar-q2-q3-2025">Content Calendar: Q2-Q3 2025</a></li></ul></nav>
+            <h2 id="ai-tools-for-real-estate-magnus">AI Tools for Real Estate — Magnus</h2>
+<hr>
+<h2 id="pre-production-1-2-days-before-filming-">Pre-Production (1-2 days before filming)</h2>
+<h3>Day 1: Script & Preparation</h3>
+<ol>
+<li>**Select video topic** from content calendar</li>
+<li>**Review/adapt script** — adjust examples to current market, add any new AI tool updates</li>
+<li>**Gather assets:**</li>
+<li>AI tool screenshots (capture current interfaces)</li>
+<li>Stock footage links (if using)</li>
+<li>Any market data/stats to reference</li>
+<li>**Create thumbnail** (see thumbnail-concepts.md)</li>
+<li>**Prepare background** — clean desk, good lighting, professional but friendly setting</li>
+<li>**Test audio** — use external mic if available, test for echo/reverb</li>
+</ol>
+<h3>Day 2: Filming Checklist</h3>
+<ul>
+<li>[ ] Recording software open (OBS Studio / Camo / Loom)</li>
+<li>[ ] Scripts open in teleprompter (Teleprompter.app / PowerPoint)</li>
+<li>[ ] All tool interfaces loaded and ready to screen-share</li>
+<li>[ ] Water nearby, lights on, phone on silent</li>
+<li>[ ] Recording: Intro, then body, then close (allows worst-to-best energy curve)</li>
+</ul>
+<hr>
+<h2 id="production-filming-day-">Production (Filming Day)</h2>
+<h3>Equipment Setup</h3>
+<p>| Item | Recommendation | Notes |</p>
+        <div class="product-card" style="margin: 40px 0; text-align: left;">
+            <div class="product-badge">Popular Choice</div>
+            <h3 style="font-size: 1.5rem;">Streamline Your Real Estate Business</h3>
+            <p class="desc">AI tools that automate the busywork so you can focus on what matters - building relationships and closing deals.</p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <a href="https://jasper.ai?ref=realestateaitools" class="btn btn-primary" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">Try Jasper (30% off)</a>
+                <a href="https://www.clickfunnels.com?ref=realestateaitools" class="btn btn-secondary" style="border: 1px solid var(--border); background: var(--bg-card); color: var(--text); padding: 14px 28px; border-radius: 10px; text-decoration: none;">Build Funnels</a>
+            </div>
+        </div>
+<p>|------|---------------|-------|
+<p>| Camera | iPhone 14+ or dedicated webcam | 1080p minimum, 4K preferred |</p>
+<p>| Lighting | Ring light or softbox (amazon basics ~$40) | Natural light from window is fine |</p>
+<p>| Mic | Lavalier (Boya BY-M1 ~$30) or AirPods | Audio quality > video quality |</p>
+<p>| Teleprompter | Teleprompter.app (iPad) or PowerPoint | Mirror mode if using physical teleprompter |</p>
+<h3>Filming Setup</h3>
+<pre><code class="language-">
+┌─────────────────────────────────────────────────┐
+│                                                  │
+│     [Camera / Webcam centered]                  │
+│                                                  │
+│  [Desk with laptop showing AI tool]              │
+│                                                  │
+│  [Lights on sides, not behind]                   │
+│                                                  │
+└─────────────────────────────────────────────────┘
+</code></pre>
 <h3>Recording Order</h3>
 <ol>
-<li><strong>Screen recordings first</strong> (for tutorials)</li>
-<li><strong>On-camera segments second</strong> (multiple takes)</li>
-<li><strong>B-roll third</strong> (if needed additional)</li>
-<li><strong>Backup shots</strong> (in case of errors)</li>
+<li>**Record intro** (first 30 seconds) — multiple takes, best energy</li>
+<li>**Record main content** — sections in order, can do retakes per section</li>
+<li>**Record outro/CTA** — second-to-last, warm closing energy</li>
+<li>**Record placeholder for B-roll** — mark where screen recordings will go</li>
 </ol>
-<h3>Recording Tips</h3>
+<h3>Best Practices</h3>
 <ul>
-<li>Write bullet points on sticky notes (not full script)</li>
-<li>Look at camera lens, not screen</li>
-<li>Speak naturally, pause between points</li>
-<li>If error, stop and re-record that segment</li>
-<li>Keep energy high for hook and closing</li>
+<li>**Eye line:** Look at camera, not at screen below</li>
+<li>**Energy:** Talk like you're explaining to ONE person, not a crowd</li>
+<li>**Pace:** Slightly slower than feels natural — editing will speed it up</li>
+<li>**Retakes:** It's OK to pause and restart a sentence — you can cut later</li>
+<li>**B-Roll:** Note timestamps where you'll insert screen recordings</li>
 </ul>
-<hr />
-<h2>Post-Production Workflow</h2>
-<h3>Software Options</h3>
-<table>
-<thead>
-<tr>
-<th>Level</th>
-<th>Software</th>
-<th>Cost</th>
-<th>Best For</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Beginner</td>
-<td>CapCut (desktop/mobile)</td>
-<td>Free</td>
-<td>Ease of use</td>
-</tr>
-<tr>
-<td>Intermediate</td>
-<td>DaVinci Resolve</td>
-<td>Free</td>
-<td>Advanced editing</td>
-</tr>
-<tr>
-<td>Advanced</td>
-<td>Adobe Premiere</td>
-<td>$23/mo</td>
-<td>Professional</td>
-</tr>
-<tr>
-<td>AI-Assisted</td>
-<td>Descript</td>
-<td>$12/mo</td>
-<td>Script-based editing</td>
-</tr>
-</tbody>
-</table>
-<h3>Edit Sequence</h3>
-<p><strong>Step 1: Organize Files (30 min)</strong>
-- Create folder structure: /Project/Assets
-- Label clips clearly
-- Export any AI-generated segments
-- Transcribe audio if needed</p>
-<p><strong>Step 2: Rough Cut (1-2 hours)</strong>
-- Import all clips to timeline
-- Place screen recordings in order
-- Add on-camera segments
-- Rough assembly of full video
-- Check runtime matches target</p>
-<p><strong>Step 3: Add Graphics &amp; Text (1 hour)</strong>
-- Add lower thirds
-- Add callout text
-- Add chapter markers
-- Add thumbnail text overlay
-- Add end screen template</p>
-<p><strong>Step 4: Audio Polish (30 min)</strong>
-- Normalize audio levels
-- Remove background noise
-- Add music bed (under narration)
-- Mix voice + music balance</p>
-<p><strong>Step 5: Color &amp; Polish (30 min)</strong>
-- Color correct if needed
-- Add transitions (subtle, minimal)
-- Check overall flow
-- Review pacing</p>
-<p><strong>Step 6: Export &amp; Upload (30 min)</strong>
-- Export at 1080p minimum, 4K if possible
-- Format: H.264 for YouTube
-- Upload to YouTube Studio
-- Add thumbnail
-- Write SEO description and tags
-- Schedule or publish</p>
-<hr />
-<h2>AI Video Generation Tools (For Visual Assets)</h2>
-<h3>AI Avatar Tools</h3>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Use Case</th>
-<th>Cost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Synthesia</td>
-<td>Agent intro videos</td>
-<td>$30/mo</td>
-</tr>
-<tr>
-<td>HeyGen</td>
-<td>Quick avatar videos</td>
-<td>$15/mo</td>
-</tr>
-<tr>
-<td>D-ID</td>
-<td>Single avatar creation</td>
-<td>$10/mo</td>
-</tr>
-</tbody>
-</table>
-<h3>AI Video Assembly</h3>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Use Case</th>
-<th>Cost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Lumen5</td>
-<td>Blog post to video</td>
-<td>Free tier</td>
-</tr>
-<tr>
-<td>InVideo</td>
-<td>Template-based videos</td>
-<td>Free tier</td>
-</tr>
-<tr>
-<td>Kapwing</td>
-<td>Quick social clips</td>
-<td>Free tier</td>
-</tr>
-</tbody>
-</table>
-<h3>Voiceover Tools</h3>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Use Case</th>
-<th>Cost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ElevenLabs</td>
-<td>AI voice clone</td>
-<td>Free tier</td>
-</tr>
-<tr>
-<td>Murf.ai</td>
-<td>Professional voiceovers</td>
-<td>$19/mo</td>
-</tr>
-<tr>
-<td>Speechify</td>
-<td>Text to speech</td>
-<td>Free tier</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2>Quality Standards Checklist</h2>
-<h3>Pre-Review (Before Publishing)</h3>
+<hr>
+<h2 id="post-production">Post-Production</h2>
+<h3>Editing Pipeline (Per Video)</h3>
+<h4>Phase 1: Initial Assembly (30-45 min)</h4>
+<ol>
+<li>Import all footage into editor (DaVinci Resolve free / CapCut / Adobe Premiere)</li>
+<li>Assemble in order: Intro → Body sections → Outro</li>
+<li>Remove obvious bad takes, long pauses, ums/uhs</li>
+<li>Insert B-roll placeholders where needed</li>
+</ol>
+<h4>Phase 2: B-Roll & Graphics (30-45 min)</h4>
+<ol>
+<li>Record screen recordings of AI tools (Loom / Camtasia / built-in recorder)</li>
+<li>Insert screen recordings at marked timestamps</li>
+<li>Add text overlays: key points, tool names, timestamps</li>
+<li>Add lower thirds / name badge (Magnus - AI Tools for Real Estate)</li>
+</ol>
+<h4>Phase 3: Polish (15-30 min)</h4>
+<ol>
+<li>Add intro animation (Canva animated intro or pre-made template)</li>
+<li>Add outro/end screen with subscribe button (YouTube Studio can auto-add)</li>
+<li>Color correct footage for consistency</li>
+<li>Add captions (YouTube auto-captions + manual review)</li>
+<li>Add background music (Epidemic Sound / Artlist / YouTube Audio Library)</li>
+</ol>
+<h4>Phase 4: Export & Upload (15 min)</h4>
+<ol>
+<li>Export at 1080p or 4K, H.264 codec, MP4 format</li>
+<li>Upload to YouTube Studio</li>
+<li>Add title (use keyword + year + format)</li>
+<li>Add description (use template)</li>
+<li>Add tags (primary keyword + secondary + related)</li>
+<li>Add timestamp chapters</li>
+<li>Add custom thumbnail (upload from Canva)</li>
+<li>Set visibility: Public / Scheduled</li>
+</ol>
+<hr>
+<h2 id="ai-voice-over-option-for-faceless-videos-">AI Voice-Over Option (For Faceless Videos)</h2>
+<h3>Tools for AI Voice</h3>
+<p>| Tool | Quality | Free Tier | Notes |</p>
+<p>|------|---------|-----------|-------|</p>
+<p>| ElevenLabs | Excellent | Limited generations | Most natural sounding |</p>
+<p>| Play.ht | Good | Limited | Multiple voice options |</p>
+<p>| Murf.ai | Good | Limited | Good for tutorials |</p>
+<p>| Microsoft Azure TTS | Good | Limited | Free tier available |</p>
+<p>| Edge TTS | Good | Unlimited | Completely free, less natural |</p>
+<h3>AI Voice Workflow</h3>
+<ol>
+<li>Write/provide script (already done in video-scripts/)</li>
+<li>Generate AI voice-over using selected tool</li>
+<li>Record screen capture of AI tool being used</li>
+<li>Sync audio with screen recordings in editor</li>
+<li>Add intro/outro webcam footage (optional for faceless channel)</li>
+<li>Export and upload</li>
+</ol>
+<hr>
+<h2 id="tools-software-stack">Tools & Software Stack</h2>
+<h3>Recording</h3>
 <ul>
-<li>[ ] Hook is compelling (watch first 30 seconds 5x)</li>
-<li>[ ] Audio is clear and consistent</li>
-<li>[ ] Visuals are stable (no shaky cam without purpose)</li>
-<li>[ ] Text is readable at all screen sizes</li>
-<li>[ ] No dead air or awkward pauses</li>
-<li>[ ] CTA is clear and actionable</li>
-<li>[ ] Description is SEO-optimized</li>
-<li>[ ] Tags are relevant and specific</li>
-<li>[ ] Thumbnail matches content and is eye-catching</li>
-<li>[ ] End screen is properly placed</li>
-<li>[ ] Chapters/timestamps are accurate</li>
+<li>**OBS Studio** (free) — Screen + webcam recording</li>
+<li>**Camtasia** (paid) — Screen recording + basic editing</li>
+<li>**Loom** (free tier) — Quick screen recordings</li>
+<li>**Zoom** (free) — Record separate screenshare calls</li>
 </ul>
-<h3>Technical Check</h3>
+<h3>Editing</h3>
 <ul>
-<li>[ ] Resolution: 1080p or higher</li>
-<li>[ ] Bitrate: 8-12 Mbps for 1080p</li>
-<li>[ ] Audio: 128kbps minimum</li>
-<li>[ ] File format: MP4</li>
-<li>[ ] Aspect ratio: 16:9</li>
+<li>**DaVinci Resolve** (free) — Professional editing, color grading</li>
+<li>**CapCut** (free) — Easy editing, good for beginners</li>
+<li>**Adobe Premiere** (paid subscription) — Industry standard</li>
+<li>**Canva** (free tier) — Video editing, thumbnails, animated intros</li>
 </ul>
-<hr />
-<h2>Production Timeline (Per Video)</h2>
-<table>
-<thead>
-<tr>
-<th>Day</th>
-<th>Task</th>
-<th>Time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Day 1</td>
-<td>Topic research + outline</td>
-<td>2-3 hours</td>
-</tr>
-<tr>
-<td>Day 2</td>
-<td>Script writing</td>
-<td>2-3 hours</td>
-</tr>
-<tr>
-<td>Day 3</td>
-<td>Visual prep + thumbnail</td>
-<td>1-2 hours</td>
-</tr>
-<tr>
-<td>Day 4</td>
-<td>Recording (screen + camera)</td>
-<td>1-2 hours</td>
-</tr>
-<tr>
-<td>Day 5</td>
-<td>Video editing</td>
-<td>3-4 hours</td>
-</tr>
-<tr>
-<td>Day 6</td>
-<td>Review + revisions + upload</td>
-<td>1-2 hours</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Total time per video: 10-17 hours</strong></p>
-<hr />
-<h2>Batch Production Strategy (Recommended)</h2>
-<p>For efficiency, batch similar tasks:
-- <strong>Batch 1:</strong> Research all 10 videos in one session (1 day)
-- <strong>Batch 2:</strong> Write all 10 scripts in one session (2-3 days)
-- <strong>Batch 3:</strong> Record all screen segments (1-2 days)
-- <strong>Batch 4:</strong> Record all on-camera segments (1-2 days)
-- <strong>Batch 5:</strong> Edit all 10 videos (1-2 weeks)
-- <strong>Batch 6:</strong> Create all thumbnails (1-2 days)
-- <strong>Batch 7:</strong> Upload and schedule all (1 day)</p>
-<p><strong>Total batch time: 3-4 weeks for 10 videos</strong></p>
-<hr />
-<h2>Content Delivery Schedule</h2>
-<h3>Minimum (2x/week)</h3>
-<table>
-<thead>
-<tr>
-<th>Day</th>
-<th>Upload</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Tuesday</td>
-<td>Main video (10-15 min)</td>
-</tr>
-<tr>
-<td>Thursday</td>
-<td>Short/bonus video (5-8 min)</td>
-</tr>
-</tbody>
-</table>
-<h3>Optimal (3x/week)</h3>
-<table>
-<thead>
-<tr>
-<th>Day</th>
-<th>Upload</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Tuesday</td>
-<td>Main video (10-15 min)</td>
-</tr>
-<tr>
-<td>Thursday</td>
-<td>Tutorial/vlog (8-12 min)</td>
-</tr>
-<tr>
-<td>Saturday</td>
-<td>Quick tip or tool review (5-7 min)</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2>Notes</h2>
+<h3>Screen Recording</h3>
 <ul>
-<li>Consistency matters more than frequency</li>
-<li>Batch production reduces stress and improves quality</li>
-<li>Always have 2-3 videos scheduled ahead</li>
-<li>Respond to comments within 24 hours for algorithm boost</li>
-<li>Analyze retention graphs to improve editing</li>
+<li>**Loom** (free) — Browser + app recording</li>
+<li>**Camtasia** (paid) — Advanced screen recording + editing</li>
+<li>**OBS Studio** (free) — Full screen/window capture</li>
+<li>**ShareX** (free, Windows) — Lightweight screen capture</li>
 </ul>
-    </article>
-    <div class="article-footer">
-        <a href="/" class="back-link">← Back to Home</a>
-    </div>
+<h3>Asset Creation</h3>
+<ul>
+<li>**Canva** (free tier) — Thumbnails, intros, lower thirds, graphics</li>
+<li>**Figma** (free) — Custom graphics and overlays</li>
+<li>**Pexels / Pixabay** (free) — Stock footage for B-roll</li>
+<li>**Epidemic Sound / Artlist** (paid) — Background music</li>
+</ul>
+<hr>
+<h2 id="quality-checklist-before-publishing-">Quality Checklist (Before Publishing)</h2>
+<h3>Video</h3>
+<ul>
+<li>[ ] Watch full video at 1x speed, no skips</li>
+<li>[ ] Check all B-roll is properly synced</li>
+<li>[ ] Verify all tool names and versions are accurate</li>
+<li>[ ] Confirm no dead links in description</li>
+<li>[ ] Check audio levels are consistent</li>
+<li>[ ] Verify captions are accurate</li>
+</ul>
+<h3>Description</h3>
+<ul>
+<li>[ ] Title has primary keyword and year</li>
+<li>[ ] Description has 150+ words with keywords</li>
+<li>[ ] Timestamps are accurate and match video</li>
+<li>[ ] Tags include primary + secondary + related keywords</li>
+<li>[ ] Hashtags formatted correctly (#keyword)</li>
+<li>[ ] Free resource link works (if applicable)</li>
+<li>[ ] CTA is clear</li>
+</ul>
+<h3>Thumbnail</h3>
+<ul>
+<li>[ ] Custom thumbnail uploaded (not auto-generated)</li>
+<li>[ ] Text is readable at small sizes</li>
+<li>[ ] Consistent brand colors used</li>
+<li>[ ] Magnus brand is visible</li>
+</ul>
+<h3>SEO</h3>
+<ul>
+<li>[ ] Title includes searchable keyword</li>
+<li>[ ] Description includes primary keyword in first sentence</li>
+<li>[ ] Tags cover main topic and related keywords</li>
+<li>[ ] Video is added to relevant playlist</li>
+<li>[ ] End screen cards link to 1-2 related videos</li>
+</ul>
+<hr>
+<h2 id="upload-schedule-template">Upload Schedule Template</h2>
+<h3>Week Template (2 videos/week)</h3>
+<p>| Day | Activity |</p>
+<p>|-----|----------|</p>
+<p>| Monday | Film Video A (edit + upload by EOD) |</p>
+<p>| Tuesday | Film Video B (edit + upload by EOD) |</p>
+<p>| Wednesday | Film next week's Video A |</p>
+<p>| Thursday | Film next week's Video B |</p>
+<p>| Friday | Write scripts for week after |</p>
+<p>| Weekend | Research + batch create thumbnails |</p>
+<h3>Batch Filming Option (Monthly)</h3>
+<p>If producing in batches:</p>
+<ul>
+<li>Film 8 videos in 2 days</li>
+<li>Edit over following week</li>
+<li>Schedule uploads for consistent cadence</li>
+</ul>
+<hr>
+<h2 id="scalability-options">Scalability Options</h2>
+<h3>When Ready to Scale</h3>
+<ol>
+<li>**Hire video editor** (Fiverr / Upwork / onlinejobs.ph) — $50-200/video</li>
+<li>**Outsource script writing** — Provide outlines, contractor expands</li>
+<li>**Hire virtual assistant** — Create thumbnails, upload videos, manage comments</li>
+<li>**AI avatar option** — Synthesia/DId for completely faceless videos</li>
+<li>**Repurpose content** — 1 YouTube video → blog post → LinkedIn → email newsletter → TikTok/Reels shorts</li>
+</ol>
+<hr>
+<h2 id="content-calendar-q2-q3-2025">Content Calendar: Q2-Q3 2025</h2>
+<p>| Week | Video | Status |</p>
+<p>|------|-------|--------|</p>
+<p>| 1 | #1 Top 10 AI Tools | ✅ Script Done |</p>
+<p>| 1 | #2 ChatGPT for Real Estate | ✅ Script Done |</p>
+<p>| 2 | #3 Free AI Tools | ✅ Script Done |</p>
+<p>| 2 | #4 How AI is Changing RE | ✅ Script Done |</p>
+<p>| 3 | #5 AI Lead Generation | ✅ Script Done |</p>
+<p>| 3 | #6 Claude for Real Estate | ✅ Script Done |</p>
+<p>| 4 | #7 AI Cold Calling | ✅ Script Done |</p>
+<p>| 4 | #8 Best AI CRM Comparison | ✅ Script Done |</p>
+<p>| 5 | #9 Automate Follow-ups | ✅ Script Done |</p>
+<p>| 5 | #10 AI Video Tools | ✅ Script Done |</p>
+<p>| 6+ | Expansion content | 📋 Planned |</p>
+            
+            <div class="newsletter-section">
+                <h3>Get Weekly AI Tools Updates</h3>
+                <p>Join 2,500+ real estate agents getting our weekly tool reviews and strategies.</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            
+            <p class="affiliate-disclaimer">*This article may contain affiliate links. We earn commissions when you purchase through links on our site, at no extra cost to you.*</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">RealEstate<span>AI</span>Tools</div>
+                <p class="footer-desc">AI tools and strategies for modern real estate agents. Close more deals with less work.</p>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 RealEstateAITools. All rights reserved.</span>
+                <div>
+                    <a href="/privacy">Privacy</a> | 
+                    <a href="/terms">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Video Production Workflow", "datePublished": "May 23, 2026", "author": {"@type": "Person", "name": "RealEstateAITools"}, "publisher": {"@type": "Organization", "name": "AI Tools for Real Estate", "url": "https://realestateaitools.shop"}}</script>
 </body>
 </html>
